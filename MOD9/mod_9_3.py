@@ -1,6 +1,8 @@
 first = ['Strings', 'Student', 'Computers']
 second = ['Строка', 'Урбан', 'Компьютер']
 
+zp = zip(first, second)
+
 first_res = ()
 
 """Задача:
