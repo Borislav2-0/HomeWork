@@ -1,10 +1,13 @@
 first = ['Strings', 'Student', 'Computers']
 second = ['Строка', 'Урбан', 'Компьютер']
 
-zp = zip(first, second)
+first_res = (len(x) - len(y) for x, y in zip(first, second) if len(x) != len(y))
 
-first_res = ()
+second_res = (True if len(first[i]) == len(second[i]) else False for i in range(len(first)))
 
+
+print(list(first_res))
+print(list(second_res))
 """Задача:
 Дано 2 списка:
 first = ['Strings', 'Student', 'Computers']
