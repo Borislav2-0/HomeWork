@@ -26,9 +26,9 @@ def is_prime(func):
     def wrapper(a, b, c):
         res = func(a, b, c)
         if type(res) is int:
-            print('A prime number')
+            print(f'The number {res} is a prime')
         else:
-            print('Composite number')
+            print(f'The number {res} is a composite')
         return res
 
     return wrapper
@@ -41,4 +41,6 @@ def sum_three(a, b, c):
 
 
 result = sum_three(2, 3, 6)
+print(result)
+result = sum_three(2, 90.625, 6)
 print(result)
