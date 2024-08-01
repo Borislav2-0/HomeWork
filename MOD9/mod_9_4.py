@@ -15,7 +15,7 @@ def get_advanced_writer(file_name):
     def write_everything(*data_set):
         with open(file_name, 'a', encoding='utf-8') as file:
             for data in data_set:
-                file.write(str(data))
+                file.write(str(data) + '\n')
 
     return write_everything
 
