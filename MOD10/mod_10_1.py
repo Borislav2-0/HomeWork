@@ -13,12 +13,10 @@ def write_words(word_count, file_name):
     return print(f'Завершилась запись в файл {file_name}')
 
 
-first_func = write_words(10, 'example1.txt')
-second_func = write_words(30, 'example2.txt')
-third_func = write_words(200, 'example3.txt')
-fourth_func = write_words(100, 'example4.txt')
-
-print(first_func, second_func, third_func, fourth_func)
+write_words(10, 'example1.txt')
+write_words(30, 'example2.txt')
+write_words(200, 'example3.txt')
+write_words(100, 'example4.txt')
 
 end_time_func = datetime.now()
 time_res_func = end_time_func - start_time
