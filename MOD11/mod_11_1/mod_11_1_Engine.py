@@ -9,7 +9,6 @@ class Photoshoper:
         self.img = 'image.png'
 
     def downloading(self):
-        print(self.url)
         response = requests.get(self.url)
         res_status_code = response.status_code
         if response.ok:
