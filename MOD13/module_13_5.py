@@ -5,7 +5,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
 
-api = "7106153589:AAHwMapuxsSAI1ntqJnq-zTXKoxQ4w1pvCM"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
